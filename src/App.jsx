@@ -1,22 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
   return (
     <main className="min-h-screen bg-special-mainBg flex justify-center items-center">
-    {/* container start */}
-       <div className="w-full max-w-sm">
+      {/* container start */}
+      <div className="w-full max-w-sm">
         {/* logo start */}
-          <div className="flex justify-center font-poppins tracking-wide text-primary text-4xl">
+        <div className="flex justify-center font-poppins tracking-wide text-primary text-4xl">
           <span className="font-bold">FINE</span>
           bank
           <span className="font-bold">.IO</span>
-        </div> 
-         {/* logo end */}
-         {/* form start */}
-         <div className="mt-16">
+        </div>
+        {/* logo end */}
+        {/* form start */}
+        <div className="mt-16">
           <form action="">
             <div className="mb-6">
               <label htmlFor="email" className="block text-sm mb-2">
@@ -33,11 +30,7 @@ function App() {
             <div className="mb-6">
               <label htmlFor="password" className="block text-sm mb-2">
                 Password
-                <a href="#" className="text-xs text-primary text-right float-right">
-                Forgot password?
-              </a>
               </label>
-              
               <input
                 type="password"
                 className="py-3 pl-4 text-sm rounded-md w-full bg-special-mainBg border border-gray-03 text-gray-01 focus:border-black focus:outline-none focus:ring-0"
@@ -46,14 +39,14 @@ function App() {
                 id="password"
               />
             </div>
-            <div className="mb-3 flex items-center">
+            <div className="mb-3">
               <input
                 type="checkbox"
                 className="text-sm accent-primary"
                 name="status"
                 id="status"
               />
-              <label htmlFor="status" className="text-sm text-gray-01 ml-2">
+              <label htmlFor="status" className="text-sm text-gray-01 ml-6">
                 Keep me signed in
               </label>
             </div>
@@ -64,22 +57,22 @@ function App() {
               Login
             </button>
           </form>
-         </div>
-         {/* form end */}
-         {/* teks start */}
-         <div className="my-9 px-7 flex flex-col justify-center items-center text-xs text-gray-03">
-          <div className="border border-gray-05 w-full"></div>
-          <div className="px-2 bg-special-mainBg absolute"> or sign in with</div>
         </div>
-         {/* teks end */}
-         {/* sign in with google start */}
-         <div>
+        {/* form end */}
+        {/* teks start */}
+        <div className="my-9 px-7 flex flex-col justify-center items-center text-xs text-gray-03">
+          <div className="border border-gray-05 w-full"></div>
+          <div class="px-2 bg-special-mainBg absolute"> or sign in with</div>
+        </div>
+        {/* teks end */}
+        {/* sign in with google start */}
+        <div className="mb-8">
           <button
             className="h-12 flex items-center justify-center rounded-md text-sm w-full bg-gray-05 text-gray-01"
             type="button"
           >
             <svg
-              className="h-6 w-6 mr-2"
+              class="h-6 w-6 mr-2"
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
               width="800px"
@@ -92,9 +85,9 @@ function App() {
               <g
                 id="Icons"
                 stroke="none"
-                strokeWidth="1"
+                stroke-width="1"
                 fill="none"
-                fillRule="evenodd"
+                fill-rule="evenodd"
               >
                 <g id="Color-" transform="translate(-401.000000, -860.000000)">
                   <g id="Google" transform="translate(401.000000, 860.000000)">
@@ -125,16 +118,16 @@ function App() {
             <span>Continue with Google</span>
           </button>
         </div>
-         {/* sign in with google end */}
-         {/* link start */}
-         <div className="flex justify-center mt-6">
+        {/* sign in with google end */}
+        {/* link start */}
+        <div className="flex justify-center">
           <a className="text-primary text-sm font-bold">Create an account</a>
         </div>
-         {/* link end */}
-       </div>
-       {/* container end */}
+        {/* link end */}
+      </div>
+      {/* container end */}
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
