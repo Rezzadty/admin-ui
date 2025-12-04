@@ -1,20 +1,42 @@
 import "./App.css";
-import { useState } from 'react';
 import SignInPage from "./Pages/signIn";
 import SignUpPage from "./Pages/signup";
+import ErrorPage from "./Pages/error";
+import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
 
 function App() {
-  const [isSignUp, setIsSignUp] = useState(false);
-
+  const myRouter = createBrowserRouter([
+    {
+      path: "/",
+      element:( 
+      	<div className="flex justify-center items-center min-h-screen">
+          <Link to="/login" className="p-2 m-5 bg-primary text-white">
+            Login
+          </Link>
+          |
+          <Link to="/register" className="p-2 m-5 bg-primary text-white">
+            Register
+          </Link>
+        </div>
+      ),
+      errorElement: <ErrorPage />
+    },
+    {
+      path: "/login",
+      element: <SignInPage />,
+    },
+    {
+      path: "/register",
+      element: <SignUpPage />,
+    }
+ 
+  ]);
   return (
     <>
-      {isSignUp ? (
-        <SignUpPage onToggle={() => setIsSignUp(false)} />
-      ) : (
-        <SignInPage onToggle={() => setIsSignUp(true)} />
-      )}
+      <RouterProvider router={myRouter} />
     </>
   );
 }
+
 
 export default App;

@@ -2,6 +2,7 @@ import React from 'react'
 import LabeledInput from '../Elements/LabeledInput';
 import Checkbox from '../Elements/Checkbox';
 import Button from '../Elements/Button';
+import { Link } from "react-router-dom";
 
 function FormSignup({ onToggle }) {
   return (
@@ -111,13 +112,9 @@ function FormSignup({ onToggle }) {
         {/* sign in with google end */}
         {/* link start */}
         <div className="flex justify-center">
-          <button 
-            type="button"
-            onClick={onToggle}
-            className="text-primary text-sm font-bold bg-transparent border-none cursor-pointer"
-          >
-            Already have an account? Sign in here
-          </button>
+          <Link to="/login" className="text-primary text-sm" font="bold">
+            Sign In Here
+          </Link>
         </div>
         {/* link end */}    
     </>
