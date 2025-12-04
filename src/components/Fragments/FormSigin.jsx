@@ -1,6 +1,6 @@
 import React from 'react'
 import LabeledInput from '../Elements/LabeledInput';
-import Checkbox from '../Elements/Checkbox';
+import CheckBox from '../Elements/CheckBox';
 import Button from '../Elements/Button';
 import { Link } from "react-router-dom";
 
@@ -29,7 +29,7 @@ function FormSignIn({ onToggle }) {
                 />
             </div>
             <div className="mb-6">
-                <Checkbox 
+                <CheckBox 
                 label="Keep me sigined in"
                 id="rememberMe"
                 type="checkbox"
