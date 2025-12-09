@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../Elements/Logo';
-import Input from '../Elements/Input';
+import Input from '../Elements/Inputs';
 
 function MainLayout(props) {
   const { children } = props;
