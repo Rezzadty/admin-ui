@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "../Elements/Inputs";
+import Input from "./Inputs";
 
 function LabeledInput(props) {
   const { label, id, ...rest } = props;
