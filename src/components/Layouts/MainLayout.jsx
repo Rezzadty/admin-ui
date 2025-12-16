@@ -71,7 +71,7 @@ function MainLayout(props) {
                 <header className="border border-b border-gray-05 px-6 py-7 flex justify-between items-center">
                 	<div className="flex items-center">
                         <div className="font-bold text-2xl me-6">Username</div> 
-			            <div className="text-gray-03 hidden sm:block">
+			            <div className="text-gray-03 flex ">
                             <Icon.ChevronRight size={20} />
                             <span>May 19, 2023</span>
                         </div> 

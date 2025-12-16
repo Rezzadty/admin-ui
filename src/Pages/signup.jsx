@@ -1,6 +1,6 @@
 import React from 'react'
 import AuthLayout from "../components/Layouts/AuthLayout";
-import FormSignup from "../components/Fragments/FormSingup";
+import FormSignup from "../components/Fragments/FormSignUp";
 
 
 function SignUp({ onToggle }) {

@@ -10,7 +10,7 @@ function card(props) {
                     <div className="text-2xl">{title}</div>
                     {link && <div className="text-xs"> View All</div>}
                 </div>
-                <div className="flex-1 bg-white rounded-lg px-6 py-5 shadown-xl">{desc}</div>
+                <div className="flex-1 bg-white rounded-lg px-6 py-5 shadow-xl">{desc}</div>
             </div>
         </>
     );
