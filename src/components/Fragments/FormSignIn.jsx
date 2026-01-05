@@ -3,13 +3,22 @@ import LabeledInput from '../Elements/LabeledInput';
 import CheckBox from '../Elements/CheckBox';
 import Button from '../Elements/Button';
 import { Link } from "react-router-dom";
+import { useState } from 'react';
 
-function FormSignIn({ onToggle }) {
+function FormSignIn({ onSubmit }) {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSubmit(email, password);
+  };
+
   return (
     <>
         {/* form start */}
         <div className="mt-16">
-          <form action="">
+          <form onSubmit={handleSubmit}>
             <div className="mb-6">
                 <LabeledInput 
                 label="Email Address"
@@ -17,6 +26,8 @@ function FormSignIn({ onToggle }) {
                 type="email"
                 placeholder="Enter your email"
                 name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 />
             </div>
             <div className="mb-6">
@@ -26,6 +37,8 @@ function FormSignIn({ onToggle }) {
                 type="password"
                 placeholder="Enter your password"
                 name="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 />
             </div>
             <div className="mb-6">
@@ -55,7 +68,7 @@ function FormSignIn({ onToggle }) {
                 <svg
                   className="h-6 w-6 mr-2"
                   xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
                   width="800px"
                   height="800px"
                   viewBox="-0.5 0 48 48"
@@ -66,9 +79,9 @@ function FormSignIn({ onToggle }) {
                   <g
                   id="Icons"
                   stroke="none"
-                  stroke-width="1"
+                  strokeWidth="1"
                   fill="none"
-                  fill-rule="evenodd"
+                  fillRule="evenodd"
                   >
                   <g id="Color-" transform="translate(-401.000000, -860.000000)">
                     <g id="Google" transform="translate(401.000000, 860.000000)">
