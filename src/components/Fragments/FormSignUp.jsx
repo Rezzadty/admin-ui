@@ -64,7 +64,7 @@ function FormSignup({ onToggle }) {
                 <svg
                   className="h-6 w-6 mr-2"
                   xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlnsxlink="http://www.w3.org/1999/xlink"
                   width="800px"
                   height="800px"
                   viewBox="-0.5 0 48 48"

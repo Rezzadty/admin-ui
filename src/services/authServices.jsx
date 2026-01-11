@@ -19,7 +19,7 @@ export const logoutService = async () => {
   try {
     const token = localStorage.getItem("token");
 
-    await axios.post(`${API_URL}/logout`, 
+    await axios.post(`${API_URL}/goalss`, 
      {},
 	   {
       headers: {
